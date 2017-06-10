@@ -1,0 +1,245 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family:"Microsoft YaHei", Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal;}
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { text-decoration:none; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+*{
+	padding: 0;
+	margin: 0;
+	border:0;
+	font-family: "Microsoft YaHei";
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+
+#backG{
+    width: 1179px;
+    height:375px;
+	display: block;
+	margin: 0 auto;
+}
+/*=================s====主要内容=============*/
+.header{
+    margin-bottom:50px;
+}
+.clickMore-main{
+    width: 1190px;
+	margin: 0 auto;
+}
+.clickMore-information{
+    margin-top:50px;
+}
+/*=====================标题==============*/
+.clickMore-tittle{
+	margin: 0 auto;
+	width: 100%;
+}
+.clickMore-mainTittle{
+	height: 70px;
+	width: 675px;
+	margin: 0 auto;
+}
+.clickMore-mainTittle img{
+	float: left;
+	display: block;
+     margin-top:33px;
+}
+.clickMore-news{
+	float: left;
+	text-align: center;
+	width: 150px;
+}
+.clickMore-news h1{
+	font-size: 28px;
+	font-weight: normal;
+    color:#000;
+}
+.clickMore-news h2{
+	font-size: 20px;
+	font-weight: normal;
+    color:#000;
+}
+/*====================副标题============================*/
+.clickMore-subtittle{
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	height: 60px;
+}
+.clickMore-subtittle img{
+	float: left;
+	margin-top: 20px;
+}
+.clickMore-college{
+	float: left;
+	width: 100px;
+}
+.clickMore-college h2{
+	font-size: 24px;
+	font-weight: normal;
+    color:#000;
+}
+.clickMore-college h3{
+    color:#000;
+	font-weight: 18px;
+	font-weight: normal;
+}
+/*====================详细列表===================*/
+.clickMore-inforLine{
+	width: 100%;
+	margin-bottom: 40px;
+}
+.clickMore-inforLine li{
+	height: 105px;
+	border-bottom: 1px solid #000;
+}
+.clickMore-inforLine ul li a:hover .clickMore-inforText h3{
+    color: #5eabec;
+}
+.clickMore-inforLine ul li a:hover #clickMore-data{
+     color: #5eabec;
+}
+.clickMore-inforLine ul li a:hover #clickMore-data span{
+     color: #5eabec;
+}
+.clickMore-inforLine ul li a:hover .clickMore-inforText p{
+    color: #5eabec;
+}
+.clickMore-inforText p{
+    
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+
+}
+
+#clickMore-data{
+	color: #132840;
+    width: 63px;
+    font-size: 22px;
+    margin: 26px 0 0 10px;
+    text-align:right;
+    float: left;
+    line-height: 33px;
+}
+#clickMore-data span{
+    text-align:right;
+	font-size: 20px;
+    display: block;
+    line-height: 33px;
+}
+.clickMore-inforText{
+	float: left;
+	margin-left: 20px;
+    margin-top:15px;
+}
+.clickMore-inforText h3{
+	font-size: 24px;
+    line-height: 43px;
+    color: #132840;
+    font-weight: normal;
+    text-overflow:ellipsis;
+    margin-top:5px;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.clickMore-inforText p{
+	color: #a9a9a9;
+	font-size: 18px;
+    width:1034px;
+}
+/*====================跳页==================*/
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+
+.change-page ul li {
+	height: 18px;
+	font-size: 18px;
+}
+.change-page {
+	position: relative;
+	width: 600px;
+	margin: 0 auto;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+
+.change-page ul li {
+	width: 100px;
+	text-align: center;
+	height: 56px;
+	float: left;
+	font-size: 20px;
+	color: #485B71;
+	border: 0px;
+}
+
+.change-page ul li span {
+	padding: 0 10px;
+}
+
+.change-page ul li a {
+	color: #485B71;
+}
+
+.change-page ul li a:hover {
+	text-decoration: none;
+}
+
+.change-page input {
+	width: 26px;
+	position: absolute;
+	left: 342px;
+	font-size: 20px;
+	top: 0px;
+	height: 26px;
+}
+
+
+/*==================== 媒体查询开始 ====================*/
+@media only screen and (max-width: 1366px) {
+	.clickMore-main{
+		width: 980px;
+	    margin: 0 auto;
+	}
+    #backG{
+        width: 975px;
+	    height: 300px;
+	}
+        .clickMore-mainTittle img{
+            margin-top: 25px;
+        }
+  .clickMore-inforText p{
+         width:875px;
+    }
+
+	.clickMore-inforText h3{
+		font-size: 22px;
+	}
+	.clickMore-inforText p{
+		font-size: 16px;
+	}
+	/*跳页*/
+	.change-page{
+		height: 40px;
+	}
+	.change-page ul li{
+		height: 20px;
+	}
+	
+}	

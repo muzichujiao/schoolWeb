@@ -1,0 +1,320 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; font-size:14px; font-family:"Microsoft YaHei", Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, th, var { font-style:normal; font-weight:normal;}
+a { text-decoration:none; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+*{
+	padding: 0;
+	margin: 0;
+	border:0;
+	font-family: "Microsoft YaHei";
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.contentMain{
+	width: 100%;
+}
+.header{
+	width: 100%;
+    height:425px;
+}
+#backG{
+    height:350px !important;
+}
+/*=================导航==============*/
+.tit a{
+    color:#000;
+    width:100%;
+    height:100%;
+    display:block;
+
+}
+.tit a:hover{
+    text-decoration:none !important;
+}
+.tabbed_content {
+    width: 1190px;
+}
+.tabs {
+    height: 50px;
+    position: relative;
+}
+
+.tit{
+	 display: block;
+    background-color: rgba(256,256,256,1);
+    background-color: rgb(256,256,256);
+    cursor: pointer;
+    color: #000;
+    float: left;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    width: 161.3px;
+    text-align: center;
+    z-index: 200;
+    position: relative;
+      height: 50px;
+    line-height: 50px;
+}
+.tit:hover{
+	/*background: rgba(256,256,256,0.60);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);*/
+	border-bottom: 1px solid #fff;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+
+}
+.tabs .tab_item {
+    display: block;
+    background-color: rgba(256,256,256,1);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#ffffff);
+    color: #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    float: left;
+    font-size: 20px;
+    width: 203.2px;
+    text-align: center;
+    z-index: 200;
+    position: relative;
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+}
+.tabs .tab_item:hover{
+	/*background-color: rgba(256,256,256,0.6);
+	 filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);*/
+	border-bottom: 1px solid #fff;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+ .slide_content {
+    overflow: hidden;
+    background-color: rgba(256,256,256,0.8);
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+    position: relative;
+    width: 1190px;
+    height: 250px;
+    visibility: hidden;
+}
+ .tabslider {
+    width: 6840px;
+    height: 250px;
+}
+ .outlook a:hover{
+     text-decoration:underline;
+ }
+ .tab_item:hover .slide_content{
+	visibility: visible;
+}
+.tabslider ul {
+    float: left;
+    width: 1190px;
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+}
+
+.tabslider ul li {
+    padding-bottom: 7px;
+}
+
+/*lookout*/
+.outlook{
+	width: 1190px;
+	margin: 0 auto;
+}
+.outlook a:hover{
+    text-decoration:underline;
+}
+.outlookCoin{
+    width: 238px;
+	
+	float:left;
+	margin-top: 20px;
+	padding-left: 150px;
+}
+.outlookCoin ul li,.outlookCoin h3{
+	
+	line-height: 25px;
+}
+.outlookCoin ul li a{
+	color: rgb(72, 91, 113);
+	font-size: 14px;
+}
+.outlookCoin ul li a:hover,.sciene ul a:hover{
+	text-decoration: underline;
+}
+.headerList ul li:hover .headerListHide{
+	visibility: visible;
+}
+.outlookCoin ul{
+	width: 180px;
+	float: left;
+    margin-top: 10px;
+}
+.outlookCoin h3{
+	float: left;
+}
+.outlookCoin img{
+	float: right;
+	height: 219px;
+	margin-top: -20px;
+}
+.head{
+	width: 100%;
+	/*overflow: hidden;*/
+	position: absolute;
+}
+#backG{
+	display: block;
+	width: 1186px;
+	height: auto;
+	margin: 0 auto;
+}
+#white,#white1{
+	float: left;
+	height: 50px; 
+	border-bottom: 1px solid #000;
+	background: #fff;
+
+}
+.content{
+	float: left;
+}
+.outlookWork{
+	width: 145px;
+	padding-left:85px;
+}
+.outlookWork ul{
+	width: 125px;
+}
+.sciene{
+	width: 870px;
+	padding-left: 100px;
+
+}
+.sciene ul li{
+	float: left;
+	width: 217px;
+	line-height:35px;
+	padding-bottom:7px;
+}
+.sciene ul{
+	width: 870px;
+	margin-top: 20px;
+}
+.outlookWork h3 {
+	float: left;
+}
+.outlookCoin h3 a,.instruct ul li a{
+	color: rgb(19, 40, 64);
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 25px;
+}
+.outlookCoin h3 a:hover{
+	text-decoration: underline;
+}
+.instruct{
+    width: 186px;
+    padding-left:110px;
+}
+.footer a:hover{
+    text-decoration:underline;
+}
+.instruct ul{
+	width: 120px;
+    margin-top: 0px;
+}
+.instruct img{
+	margin-top: 7px ;
+}
+#studentColor{
+    margin-top: -160px;
+}
+#studentOrg{
+    margin-top: -127px;
+}
+.imggg{
+    padding-top:72px;
+}
+.main{
+	width: 1190px;
+	margin: 0 auto;
+}
+.article img,.article{
+		width: 1025px;
+	}
+	
+
+/*==================== 媒体查询开始 ====================*/
+@media only screen and (max-width: 1366px) {
+	/*导航*/
+    .imggg{
+        padding-top:70px;
+    }
+.content,.outlook,.tabbed_content,.tabslider>ul,.slide_content {
+    	width: 980px;
+	}
+	#backG{
+		width: 980px;
+	}
+	.outlookCoin ul{
+		width: 160px;
+	}
+	.header{
+		height:360px !important;
+	}
+	.tabslider{
+		width: 5000px;
+	}
+	.tabs .tab_item,.tit{
+		width: 161.3px;
+	}
+	.outlookCoin{
+		width: 214.6px;
+		padding-left: 110px;
+	}
+	
+	.outlookWork{
+		width: 130px;
+		padding-left: 60px;
+	}	
+	
+	.instruct{
+		width: 160px;
+        padding-left:83px;
+	}
+    #backG{
+        height:300px !important;
+    }
+	.instruct ul{
+		width: 135px;
+	}
+	.outlookWork ul{
+		width: 80px;
+	}
+	
+
+
+}	

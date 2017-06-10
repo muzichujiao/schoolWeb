@@ -1,0 +1,877 @@
+*{
+	padding: 0;
+	margin:0;
+    font-size:14px;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+body {
+    font-family: "Microsoft YaHei";
+  
+}
+img{
+	border:0;
+}
+body{
+	font-size: 14px;
+}
+.cont{width: 100%;}
+.clear{
+	clear:both;
+}
+/*
+*/
+/*=============箭头=================*/
+
+	#list{
+		width: 9526px;
+		height: 400px;
+		position: absolute;
+		z-index: 1;
+	}
+	#list img{float: left;width:1366px;}
+	#button{
+		position: absolute;
+		height: 10px;
+		width: 100px;
+		z-index: 2;
+		bottom: 20px;
+		left: 250px;
+	}
+
+
+	.arrow{
+		cursor: pointer;		
+		height: 300px;
+		width: 63px;
+		text-align: center;
+		position: absolute;
+		z-index: 6;
+		top: 180px;
+		background-color: rgba(0,0,0,.3);
+	}
+	.arrow:hover{background-color: rgba(0,0,0,.7);}
+	#cont:hover .arrow{display: block;}
+	#prev{left: 20px;}
+	#next{right: 20px;}
+
+#prev{
+   
+    background: url("../images/arrow1.png") no-repeat top left;
+}
+#prev:hover{
+    background: url("../images/arrowhover.png") no-repeat top left;
+}
+#next{
+    background: url("../images/arrow.png") no-repeat top left;
+}
+#next{
+	right:0px;
+}
+#next:hover{
+    background: url("../images/arrow_hover.png") no-repeat top left;
+}
+
+
+
+
+
+
+
+/*==================== 轮播 ====================*/
+.header{
+	position: relative;
+	width: 100%;
+	overflow:hidden;
+	height: 459px;
+}
+.expert{    
+  	/*height: 202px;  */  
+  	width: 1366px;
+  	overflow:hidden;
+ 	position: relative;
+}
+.expert_list{
+  	/*width: 5000px;*/
+  	position: relative;
+}
+
+/*.expert_list ul li{
+  display: inline;
+  float: left;
+  width: 1366px;
+}
+.expert_list ul li img{
+	width: 1366px;
+	height: auto;
+}
+.expert_listIE ul li {
+    width:1920px;
+}
+.expert_listIE ul li img{
+    width:1920px;
+}*/
+/*==================== 导航栏 ====================*/
+.content {
+    width: 100%;
+ }
+
+.tabbed_content {
+    width: 100%;
+}
+.tabs {
+    height: 50px;
+    float:left;
+    position: relative;
+}
+.tit{
+	display: block;
+    background-color: rgba(256,256,256,1);
+    background-color: rgb(256,256,256);
+    float: left;
+   cursor:pointer;
+    width: 163.3px;
+    text-align: center;
+    z-index: 200;
+    position: relative;
+      height: 50px;
+    line-height: 50px;
+}
+.tit a{
+     color: #000;
+     font-size: 20px;
+     width:100%;
+     height:100%;
+     display:block;
+}
+.tit:hover{
+	background: rgba(256,256,256,0.60);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+
+}
+
+.tabs .tab_item {
+    display: block;
+    background-color: rgba(256,256,256,1);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#ffffff);
+    color: #000;
+    float: left;
+    font-size: 20px;
+    width: 163.3px;
+    text-align: center;
+    z-index: 200;
+    position: relative;
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+}
+
+.tabs .tab_item:hover{
+	background-color: rgba(256,256,256,0.6);
+	
+	 filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+}
+.slideC{
+    overflow: hidden;
+    background-color: rgba(256,256,256,0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+    position: relative;
+    width: 100%;
+    height: 250px;
+    visibility: hidden;
+}
+ .slide_content {
+    overflow: hidden;
+    margin:0 auto;
+    position: relative;
+    width: 980px;
+    height: 250px;
+
+}
+ .tabslider {
+    width: 5000px;
+    height: 250px;
+}
+ .tab_item:hover .slideC{
+	visibility: visible;
+}
+.tabslider ul {
+    float: left;
+    width: 980px;
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+}
+
+.tabslider ul li {
+    padding-bottom: 7px;
+}
+
+
+
+/*lookout*/
+.outlookCoin h3 a,.instruct ul li a{
+	color: rgb(19, 40, 64) !important;
+	font-size: 18px !important;
+	font-weight: normal;
+	line-height: 25px;
+}
+.outlookCoin h3{
+    margin-bottom:5px;
+}
+.outlook{
+	width: 980px;
+	margin: 0 auto;
+}
+.outlookCoin{
+	width: 200.6px;
+	float:left;
+	margin-top: 20px;
+	padding-left: 126px;
+}
+.outlookCoin ul li,.outlookCoin h3{
+	
+	line-height: 25px;
+}
+.outlookCoin ul li a{
+	color: rgb(72, 91, 113);
+	font-size: 14px;
+}
+.outlookCoin ul li a:hover,.sciene ul a:hover{
+	text-decoration: underline;
+}
+.headerList ul li:hover .headerListHide{
+	visibility: visible;
+}
+.outlookCoin ul{
+	width: 155px;
+	float: left;
+}
+.outlookCoin h3{
+	float: left;
+}
+#studentColor{
+    margin-top:-145px;
+}
+#studentOrg{
+    margin-top:-115px;
+}
+.outlookCoin img{
+	float: right;
+	height: 205px;
+	margin-top: -35px;
+    width:0.8px;
+}
+.arrow{
+    font-size:40px;
+    color:#fff;
+}
+.head{
+    z-index:5;
+	width: 100%;
+	overflow: hidden;
+    top:0;
+    position:absolute;
+}
+.listIE img{
+    
+}
+#white,#white1{
+	float: left;
+	height: 50px; 
+	background: #fff;
+
+}
+.content{
+	float: left;
+}
+
+.outlookWork ul{
+	width: 80px;
+}
+.sciene{
+	width: 870px;
+	padding-left: 100px;
+
+}
+.sciene ul li{
+	float: left;
+	width: 217px;
+	line-height:35px;
+	padding-bottom:7px;
+}
+.sciene ul{
+	width: 870px;
+	margin-top: 20px;
+}
+.outlookWork h3 {
+	float: left;
+}
+
+.outlookCoin h3 a:hover{
+	text-decoration: underline;
+}
+
+.instruct ul{
+	width: 135px;
+}
+.instruct img{
+	margin-top: 0px !important;
+}
+/*==================== 学院概况 ====================*/
+.headerListHide{
+	visibility: hidden;
+	background-color: rgba(256,256,256,0.65);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	left: 0;
+	padding-top: 10px;
+/*	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=65);
+	opacity: 0.65;*/
+}
+.outlook{
+	width: 980px;
+	margin: 0 auto;
+}
+
+.outlookWork{
+	width: 120px;
+	padding-left:70px;
+}
+.outlookCoin ul li,.outlookCoin h3{
+	text-align: left;
+	line-height: 25px;
+}
+.instruct{
+	width: 140px;
+    padding-left:79px;
+}
+.outlookCoin h3 a{
+	color: rgb(19, 40, 64);
+	font-size: 18px;
+	font-weight: normal;
+}
+.outlookCoin ul li a{
+	color: rgb(72, 91, 113);
+	font-size: 14px;
+}
+.outlookCoin ul li a:hover{
+	text-decoration: underline;
+}
+.headerList ul li:hover .headerListHide{
+	visibility: visible;
+}
+.outlookCoin ul,.outlookCoin h3 a{
+	float: left;
+}
+
+.outlookCoin img{
+	float: right;
+	height: 205px;
+	margin-top: -19px;
+}
+/*==================== banner ====================*/
+.header >img{
+	/*width: 100%;*/
+	width:1366px;
+	height: auto;
+}
+/*==================== 标题 ====================*/
+.search{
+	position: absolute;
+	width: 100%;
+	top:160px;
+	z-index:3;
+}
+.searchCont p{
+	font-size: 24px;
+	color: #fff;
+	line-height: 71px;
+}
+.searchCont{
+	width: 588px;
+	margin: 0 auto;
+	height:121px;
+}
+#searchInfor{
+	font-size: 40px;
+	color: rgb(19, 40, 64);
+	font-weight: normal;
+	height: 71px;
+	border:0;
+	line-height: 71px;
+	border-radius:10px 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	text-align: center;
+	width: 541px;
+	margin: 0 auto;
+	background-color: rgba(256,256,256,0.65);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+}
+/*==================== banner消息 ====================*/
+.headerInfor{
+	height: 155px;
+	width: 100%;
+	position: absolute;
+	top: 300px;
+    z-index:1;
+}
+.headerInforCont{
+	width: 980px;
+	margin: 0 auto;
+	height: 155px;
+	
+}
+.inforTittle,.inforTA{
+	background-color:rgba(19,40,64,0.65);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99585d66,endColorstr=#99585d66);
+	width: 270px;
+	height: 55px;
+	text-align: center;
+	float: left;
+    overflow:hidden;
+    
+}
+.footer a:hover{
+    text-decoration:underline;
+}
+#lecture,#moreLecture{
+    display:block;
+}
+#moreLecture{
+    line-height:55px;
+    font-size:20px;
+}
+.inforTittle a{
+    height:55px;
+}
+.inforTA{
+	height: 90px;
+}
+.time{line-height: 45px;}
+.inforMore,.inforDetail{
+	float: left;
+	height: 16px;
+	width: 705px;
+	margin-left: 5px;
+	padding-top: 40px;
+}
+.inforDetail:hover #lbtReporter h3{
+    text-decoration:underline;
+}
+.inforDetail p{
+	font-size: 16px;
+}
+.inforTA,.inforDetail{
+	margin-top: 5px;
+}
+.inforTA p{
+	font-size: 20px;
+}
+.inforDetail{
+	height: 90px;
+	padding-left: 30px;
+	width: 675px;
+	padding-top: 0;
+	background-color:rgba(19,40,64,0.65);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99585d66,endColorstr=#99585d66);
+}
+.inforDetail a{
+    height:90px;
+    width:675px;
+}
+.inforDetail h3{
+	font-size: 20px;
+	font-weight: normal;
+	color: #fff;
+	line-height: 45px;
+}
+    .inforDetail p {
+            overflow: hidden; /*自动隐藏文字*/
+text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+white-space: nowrap;/*强制不换行*/
+    }
+.headerInfor a,.headerInfor p{color: #fff;}
+.inforTittle h3{
+	font-size: 22px;
+    font-weight:normal;
+}
+.inforTittle p{
+	font-size: 14px;
+
+}
+.main{
+	width: 100%;
+  
+}
+.footer{
+    margin-top:70px;
+}
+/*==================== 新闻动态 ====================*/
+.news{
+	width: 980px;
+	padding-bottom: 40px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+.Sign{
+	width: 100%;
+	height: 35px;
+}
+.Sign h3,.Sign p{
+	color: #132840;
+	font-weight: 500;
+	font-size: 22px;
+	float: left;
+}
+.Sign p{
+	font-size: 16px;
+	line-height: 34px;
+	text-align: center;
+	margin-left: 10px;
+}
+.college{margin-bottom: 7px;}
+.collegeList ul,.studentList ul{
+	width: 100%;
+	height: 275px;
+}
+.Sign a{
+    float:right;
+    font-size:18px;
+    color:#132840;
+    margin-right:20px;
+}
+.collegeList ,.studentList{
+	width: 100%;
+	height:250px; 
+}
+.collegeList ul li div,.studentList ul li div{
+    height:45px;
+}
+.student{
+    margin-top:50px;
+}
+.collegeList li,.studentList li{
+	float: left;
+	padding: 7px;
+	width: 220px;
+    height:214px;
+	margin-right: 9px;
+	border:1px dashed #a9a9a9;
+    overflow:hidden;
+}
+.collegeList li img{
+	width: 220px;
+	height: 148px;
+}
+.college-img,.student-img {
+    width: 220px !important;
+	height: 148px !important;
+}
+.studentList li img{
+	width: 220px;
+	height: 148px;
+}
+.collegeList li h4,.studentList li h4{
+	font-size: 18px;
+	font-weight: normal;
+	color: #132840;
+}
+.collegeList li span,.studentList li span{
+	float: right;
+	color: #a9a9a9;
+	font-size: 14px;
+}
+.collegeList li a:hover >h4,.studentList li a:hover >h4{
+	color: #5eabec;
+}
+.collegeList li:hover,.studentList li:hover{
+	border:1px solid #a9a9a9;
+}
+
+#last{
+	margin-right: 0;
+}
+/*==================== 就业信息 ====================*/
+.employ,.notice{
+	width: 980px;
+	height: 545px;
+	margin: 0 auto;
+}
+.Tittle{
+	width: 100%;
+	text-align: center;
+	height: 65px;
+    margin-bottom:20px;
+}
+.co{
+	width: 263px;
+	margin: 0 auto;
+	height: 55px;
+}
+.co div h1,.co div h2{
+    color:#132840;
+}
+
+.moreInfor{
+	width: 100%;
+	margin-top: 5px;
+	height: 30px;
+}
+.noticeUl{
+    height:450px;
+    width:100%;
+}
+.moreInfor a{
+    margin-right:5px;
+}
+.Tittle img{
+	float: left;
+	padding-top: 30px; 
+}
+.co div{
+	float: left;
+	margin: 0 15px;
+}
+.Tittle div h1,.Tittle div h2{
+	font-size: 24px;
+	font-weight: normal;
+}
+.Tittle div h2{
+	font-size: 18px;
+}
+.noticeCont{
+	height: 300px;
+	width: 100%;
+}
+.employCont ul,.noticeCont ul{
+	width: 48%;
+	float: left;
+}
+.employ{
+    margin:40px auto;
+    
+}
+.employUl{
+    height:440px;
+    width:100%;
+}
+#employList{
+	margin-right: 4%;
+}
+.employCont ul li,.noticeCont ul li{
+	width: 100%;
+	height: 85px;
+
+	border-bottom: 1px solid #485b71;
+}
+.employCont ul li a,.noticeCont ul li a{
+	width: 100%;
+	height: 83px;
+	
+}
+.employCont ul li p,.noticeCont ul li p{
+    margin-right:15px;
+	color: #132840;
+	width: 43px;
+    text-align:right;
+	font-size: 24px;
+	margin-top: 12px;
+	float: left;
+    overflow: hidden; /*自动隐藏文字*/
+text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+white-space: nowrap;/*强制不换行*/
+}
+.employCont ul li p span,.noticeCont ul li p span{
+	font-size: 18px;
+	display: block;
+}
+.employCont ul li h3,.noticeCont ul li h3{
+	font-size: 18px;
+	float: left;
+	height: 83px;
+	width: 375px;
+	line-height: 83px;
+	
+	color: #132840;
+	overflow: hidden;
+	font-weight: normal;
+    overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+}
+.employCont ul li a:hover >h3,.employCont ul li a:hover >p,
+.noticeCont ul li a:hover >h3,.noticeCont ul li a:hover >p,
+.employCont a:hover,.noticeCont a:hover,.collegeList ul li a:hover .college-txttitle h4 ,
+.studentList a:hover .student-txttitle h4,.Sign a:hover{
+    text-decoration:none;
+	color: #5eabec;
+}
+.employCont a,.noticeCont a,.collegeList a,.studentList a{
+	float: right;
+	font-size: 18px;
+	color: #132840;
+}
+/*==================== 底部 ====================*/
+
+/*==================== 媒体查询开始 ====================*/
+@media only screen and (min-width: 1367px) {
+	/*就业信息*/
+	.employ,.notice,.news,.headerList,.outlook,.headerInforCont{
+		width: 1190px;
+	}
+	.header{
+		height: 649px;
+	}
+	.inforDetail,.inforDetail a{
+		width: 885px;
+	}
+	/*banner部分*/
+	.header >img{
+		width: 1920px;
+		height: auto;
+	}
+	.headerInfor{
+		top:484px;
+	}
+	.search{
+		top: 280px;
+	}
+	.outlookCoin{
+		width: 296.5px;
+	}
+	.Tittle div h1, .Tittle div h2{
+		font-size: 30px;
+        
+	}
+	.Tittle div h2{
+		font-size: 22px;
+	}
+	.Tittle{height: 85px;}
+	.Sign h3{
+		font-size: 24px;
+	}
+	.collegeList li h4, .studentList li h4{
+		font-size: 20px;
+	}
+	.headerList,.meun,.headerList >ul >li{
+		height: 60px;
+		line-height: 60px;
+	}
+	.collegeList, .studentList{
+		height: 290px;
+	}
+	.employCont ul li h3, .noticeCont ul li h3{
+		width: 490px;
+	}
+	.employCont ul li h3{
+		font-size: 20px;
+	}
+
+	.collegeList li img,.studentList li img{
+		width: 270px;
+        height:180px;
+	}
+    .college-img,.student-img{
+        width: 270px !important;
+        height:180px !important;
+    }
+	.collegeList li, .studentList li{
+		width: 270px;
+        overflow:hidden;
+	}
+	.footCont{
+		width: 1190px;
+	}
+	.headerList >ul >li{
+		font-size: 22px;
+	}
+	body{
+		font-size: 16px;
+	}
+	.blogo{
+		width: 574px;
+	}
+	.blogoText{
+		width: 407px;
+	}
+	.blogo >img{
+		height: 167px;
+	}
+	.footCon{
+		width: 589px;
+	}
+
+
+	/*导航栏*/
+.outlook,.tabslider ul {
+    width: 1190px;
+}
+   .tabbed_content{
+        width:100%;
+    }
+   .slide_content{
+       width:1190px;
+   }
+   .slideC{
+       width:100%;
+   }
+.tabslider{
+	width: 6840px;
+}
+.tabs .tab_item,.tit{
+	width: 198.3px;
+}
+.outlookCoin{
+	width: 245px;
+    padding-left:150px;
+}
+.outlookCoin ul li a{
+    font-size:16px;
+}
+.outlookCoin ul{
+	width: 233px;
+}
+.outlookWork{
+	width: 156px;
+    padding-left:80px;
+}
+.outlookWork ul{
+	width: 85px;
+   
+}
+.instruct{
+	width: 195px;
+     padding-left:100px;
+}
+.instruct ul{
+	width: 175px;
+}
+/*轮播*/
+.collegeList li,.studentList li{
+    height:254px;
+}
+.expert_list ul li img{
+    width: 1920px;
+  }
+  .expert_list ul li{
+    width: 1920px;
+  }
+  .collegeList ul li div,.studentList ul li div{
+    height:52px;
+}
+  #list img{
+      width:1920px !important;
+  }
+
+}
+

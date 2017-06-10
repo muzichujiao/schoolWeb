@@ -1,0 +1,143 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family:"Microsoft YaHei", Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a {  text-decoration:none; }
+
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+*{
+	padding: 0;
+	margin: 0;
+	border:0;
+	font-family: "Microsoft YaHei";
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+#backG{
+	display: block;
+	width: 1186px;
+	height: auto;
+	margin: 0 auto;
+}
+.header{
+	height: 400px;
+	width: 100%;
+    margin-bottom:30px;
+}
+.contentMain{
+	width: 100%;
+}
+.content-main{
+    width: 1190px;
+	margin: 0 auto;
+    margin-bottom:50px;
+	border:1px solid #000;
+}
+.content-tittle{
+	width: 1025px;
+	margin: 0 auto;
+	border-bottom:2px solid #000;
+
+}
+content-article p ol li{
+    font-size:18px;
+}
+.content-sign a{
+	text-decoration: underline;
+	color: #5eabec;
+	font-size: 18px;
+	display: inline-block;
+	margin-left: 5px;
+}
+#mainText_plAcademic{
+    text-align:center;
+    margin-bottom:10px;
+}
+#mainText_plAcademic span{
+    font-size: 18px;
+	color: rgb(102, 102, 102);
+}
+.content-tittle h1{
+	text-align: center;
+	width: 100%;
+	line-height: 58px;
+	font-weight: normal;
+	font-size: 28px;
+    margin-bottom:25px;
+	color: rgb(19, 40, 64);
+}
+.content-sign{
+	text-align: center;
+	padding-top: 20px;
+    margin-bottom: 70px;
+}
+.content-sign span{
+	
+	font-size: 18px;
+	color: rgb(102, 102, 102);
+}
+.content-contText{
+	width:100%;
+}
+.content-article{
+	margin-top: 75px;
+	width: 940px;
+	margin: 0 auto;
+    margin-bottom:25px;
+}
+.content-article p{
+	font-size: 18px;
+	color: rgb(19, 40, 64);
+	line-height: 32px;
+}
+
+.content-article p:last-child {
+    margin-bottom:20px;
+}
+
+.content-article img{
+	margin: 20px 0;
+}
+.content-note span{
+  font-size: 18px;
+  color: rgb(102, 102, 102);
+  line-height: 25px;
+}
+.content-note{
+	margin: 40px 0 20px 0;
+}
+
+/*==================== 媒体查询开始 ====================*/
+@media only screen and (max-width: 1366px) {
+	.content-main{
+        width: 978px;
+	    margin: 0 auto;
+        margin-bottom:50px;
+	}
+    #backG{
+		width: 980px;
+	}
+
+	.content-tittle{
+		width: 729px;
+	}
+	.content-sign{
+		margin-bottom: 50px;
+	}
+	
+	.content-sign span,.content-sign a,#mainText_plAcademic span{
+		font-size: 16px;
+	}
+}	

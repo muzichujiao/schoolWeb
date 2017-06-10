@@ -1,0 +1,236 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Manage_Login" %>
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>信息科学与工程学院</title>
+	<link href="css/manage.css" rel="stylesheet" />
+    <!-- enable HTML5 elements in IE -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="../css/ie.css" />
+    <script type="text/javascript" src="../js/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="JsRsa/jquery-3.1.1.min.js"></script>
+    <script src="JsRsa/jQuery.md5.js" type="text/javascript"></script>
+    <script src="JsRsa/BigInt.js" type="text/javascript"></script>
+    <script src="JsRsa/RSA.js" type="text/javascript"></script>
+    <script src="JsRsa/Barrett.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            //强制清空密码框
+            $("#txtPassword").val('');
+            $("#form1").submit(function (e) {
+                //验证密码长度
+                if ($("#txtPassword").val().length > 25) {
+                    alert("输入有误，刷新中！");
+                    window.location.replace(window.location.href);
+                    return false;
+                }
+                var c = $.cookie('_RSA'); // 读取 cookie 
+                var keyPair = new Object();
+                if (c) {
+                    var str = c;
+                    var arr = str.split("&");
+                    for (var i = 0; i < arr.length; i++) {
+                        var tmp_arr = arr[i].split("=");
+                        keyPair[decodeURIComponent(tmp_arr[0])] = decodeURIComponent(tmp_arr[1]);
+                    }
+                    //encryptBegin
+                    setMaxDigits(129);
+                    var key = new RSAKeyPair(keyPair['Exponent'], "", keyPair['Modulus']);
+                    var pwd = $("#txtPassword").val();
+                    var pwdRtn = encryptedString(key, pwd).toUpperCase();
+                    $("#txtPassword").val(pwdRtn);
+                }
+                else {
+                    alert("登录页面过期，刷新中！");
+                    window.location.replace(window.location.href);
+                    return false;
+                }
+
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+	<div class="login">
+		<!--[if lt IE 8]>
+	    <div class="ie-login">
+	    	请使用以下任意一项浏览器登录！
+	    	<ul>
+	    		<li>IE8+ 浏览器</li>
+	    		<li>谷歌，火狐等现代浏览器</li>
+	    		<li>混合浏览器（360，搜狗，猎豹...）<br />的极速模式</li>
+	    	</ul>
+	    </div>
+	    <![endif]-->
+		<h1>信息科学与工程学院管理登陆</h1>
+		<form id="form1" runat="server">
+			<p>
+				<asp:TextBox ID="txtID" runat="server" MaxLength="16" placeholder="请输入用户名"></asp:TextBox>
+				<%--<asp:RequiredFieldValidator ID="valrName" runat="server" ErrorMessage="学号/工号不能为空" ControlToValidate="txtID" ForeColor="Red" ValidationGroup="valid"></asp:RequiredFieldValidator>--%>
+				<!--input type="text" value="" placeholder="请输入用户名" /-->
+			</p>
+			<p>
+				<asp:TextBox ID="txtPassword" runat="server" TextMode="Password" MaxLength="16" placeholder="请输入密码"></asp:TextBox>
+				<%--<asp:RequiredFieldValidator ID="valrPassword" runat="server" ErrorMessage="密码不能为空" ControlToValidate="txtPassword" ForeColor="Red" ValidationGroup="valid"></asp:RequiredFieldValidator>--%>
+				<!--input type="password" placeholder="请输入密码" /-->
+			</p>
+
+
+
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+            <div class="indentifying-code clearfix">
+		<!--	<input type="text">  -->
+            <asp:TextBox ID="txtValidCode"  runat ="server"  placeholder="输入验证码" style="float:left;width:9.5em" MaxLength="4" ></asp:TextBox>
+			<div>
+                  <img  src ="captcha.aspx"  id="valiImg" alt="validate" width="170" height="40" onclick="reflash();"/>
+                <script>
+            function reflash() {
+                $("#valiImg").attr("src", 'captcha.aspx?time=' + Math.random());
+            }
+        </script>
+			</div>
+		</div>
+
+
+			<p class="login-btn"style="margin-top:30px">
+				<asp:Button ID="BtnLogin" runat="server" Text="登录" CausesValidation="true" OnClick="BtnLogin_Click" ValidationGroup="valid"/>
+				<asp:Button ID="BtnReturn" runat="server" Text="返回首页" PostBackUrl="~/Default.aspx" />
+			</p>
+		</form>
+
+
+
+           <form id="form2" runat="server" >
+		<div class="lodIn-cont">
+
+			<div>
+                <%--<input type="text" name="username" id="username" class="txtfield" tabindex="1" value="请输入用户名">--%>
+                <asp:TextBox ID="username"  runat ="server"  CssClass="txtfield" TabIndex="1" Text="请输入用户名"></asp:TextBox>
+				<asp:RequiredFieldValidator ID="valrName" runat="server" ErrorMessage="学号/工号不能为空" ControlToValidate="username" ForeColor="Red" ValidationGroup="valid"></asp:RequiredFieldValidator>
+
+			</div>
+     	 	<div class="pass">
+
+     	 		<span id="password_text" onclick="this.style.display='none';document.getElementById('password').style.display='inline-block';document.getElementById('password').focus();" >密码</span>
+				<%--<input name="password" type="password" id="password" style="display:none;" onblur="if(this.value==''){document.getElementById('password_text').style.display='inline-block';this.style.display='none'};"/>--%>
+                  <asp:TextBox ID="password" runat ="server" MaxLength="20" TextMode="Password"  style="display:none;" onblur="if(this.value==''){document.getElementById('password_text').style.display='inline-block';this.style.display='none'};" />
+				<asp:RequiredFieldValidator ID="valrPassword" runat="server" ErrorMessage="密码不能为空" ControlToValidate="password" ForeColor="Red" ValidationGroup="valid"></asp:RequiredFieldValidator>
+
+     	 		</div>
+
+
+     	 	<div class="logIn-check">
+
+  
+
+
+     	 		<div>
+                      <%--<input type="text" name="check" id="check" class="txtfield" value="请输入验证码" />--%>
+                      <asp:TextBox ID="check" runat ="server" CssClass="txtfield" Text ="请输入验证码 " MaxLength="5"></asp:TextBox>
+
+                                 <img  src ="captcha.aspx"  id="valiImg" alt="validate" width="170" height="40" onclick="reflash();"/>
+                <script>
+            function reflash() {
+                $("#valiImg").attr("src", 'captcha.aspx?time=' + Math.random());
+            }
+        </script>
+
+     	 		<%--<img src="images/logIn.jpg">--%>
+
+     	 		</div>
+     	 	</div>
+		</div>
+		<div class="logIn-button">
+          	<div>
+                  <%--<input type="submit" name="loginbtn" id="loginbtn" class="flatbtn-blu hidemodal" value="登录" tabindex="4">--%>
+                  <asp:Button ID="loginbtn" runat ="server" CssClass="flatbtn-blu hidemodal" Text="登录" TabIndex="4" />
+          	</div>
+          	<div>
+                <asp:Button ID="rntHome" runat ="server" CssClass="flatbtn-blu hidemodal" Text ="返回首页" PostBackUrl="www.baidu.com" TabIndex="5" />
+                   <%--<input type="submit" name="zhubtn" id="zhubtn" class="flatbtn-blu hidemodal" value="返回" tabindex="5" >--%>
+          	</div>
+      	</div>
+
+            </form>
+
+
+
+
+	</div>
+	<canvas class="login-bg" id="bg">
+	</canvas>
+	<script type="text/javascript">
+		var bg = document.getElementById("bg");
+		var ctx = bg.getContext("2d");
+		
+		//making the canvas full screen
+		bg.height = window.innerHeight;
+		bg.width = window.innerWidth;
+		
+		//chinese characters - taken from the unicode charset
+		var chinese = "01";
+		//converting the string into an array of single characters
+		chinese = chinese.split("");
+		
+		var font_size = 14;
+		var line_height = 18;
+		var columns = bg.width/(font_size + line_height); //number of columns for the rain
+		//an array of drops - one per column
+		var drops = [];
+		//x below is the x coordinate
+		//1 = y co-ordinate of the drop(same for every drop initially)
+		for(var x = 0; x < columns; x++) {
+			drops[x] = 1; 
+		}
+		
+		var loop = 0;
+		//drawing the characters
+		function draw()
+		{
+			loop++;
+			if (loop > 100) {
+				//清空背景
+				ctx.fillStyle = "rgba(245, 249, 250, .5)";
+				//ctx.fillStyle = "rgba(0, 0, 0, .5)";
+				ctx.fillRect(0, 0, bg.width, bg.height);
+				loop = 0;
+			} else {
+				//Black BG for the canvas
+				//translucent BG to show trail
+				ctx.fillStyle = "rgba(245, 249, 250, .12)"; //字符消失速度
+				//ctx.fillStyle = "rgba(0, 0, 0, .12)";
+				ctx.fillRect(0, 0, bg.width, bg.height);
+			}
+			
+			ctx.fillStyle = "#9ba0a3"; //green text
+			//ctx.fillStyle = "#2ECC71";
+			ctx.font = font_size + "px arial";
+			//looping over drops
+			var dropsL = drops.length
+			for(var i = 0; i < dropsL; i++)
+			{
+				//a random chinese character to print
+				var text = chinese[Math.floor(Math.random()*chinese.length)];
+				//x = i*font_size, y = value of drops[i]*font_size
+				ctx.fillText(text, i*(font_size + line_height), drops[i]*(font_size + 4));
+				
+				//sending the drop back to the top randomly after it has crossed the screen
+				//adding a randomness to the reset to make the drops scattered on the Y axis
+				if(drops[i]*font_size > bg.height && Math.random() > 0.995) //密集程度，越大越稀疏
+					drops[i] = 0;
+				
+				//incrementing Y coordinate
+				drops[i]++;
+			}
+		}
+		setInterval(draw, 40);  //重复绘制，下降速度
+	</script>
+    <script type="text/javascript" src="JsRsa/jquery.cookie-1.4.1.min.js"></script>
+</body>
+</html>

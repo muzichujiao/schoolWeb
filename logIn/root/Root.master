@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Root.master.cs" Inherits="Manage_root_Root" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link href="../css/manage.css" rel="stylesheet" />
+    <title>信息科学与工程学院</title>
+    <!-- enable HTML5 elements in IE -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="../css/ie.css" />
+    <script type="text/javascript" src="../js/html5.js"></script>
+    <![endif]-->
+    <style>
+        h1 {
+            text-align:center;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="manage">
+    <form id="form1" runat="server">
+        <aside class="man-aside">
+            <h1>信息学院后台管理</h1>
+            <hr />
+            <nav class="man-nav">
+                <ul id="man-navigation">
+                    <li class="second" ><a href="#">成员管理<em></em></a>
+                           <ul>
+                                <li><a href="adminList.aspx?" >管理员列表</a></li>
+                                <li><a href="add.aspx?type=admin" >注册管理员</a></li>
+                          </ul>
+                    </li>
+
+                    <li class="second" ><a href="#">组织管理<em></em></a>
+                           <ul>
+                                <li><a href="groupList.aspx?" >组织列表</a></li>
+                                <li><a href="add.aspx?type=org" >添加组织</a></li>
+                               <li><a href="add.aspx?type=orgNumber" >添加组织成员</a></li>
+                          </ul>
+                    </li>
+
+
+                    <li><a href="adminLog.aspx">管理员登录记录</a></li>
+                    <li><a href="editPwd.aspx">修改密码</a></li>
+                    <li>
+                        <asp:LinkButton ID="lnkEdit" runat="server"  OnClick="lnkEdit_Click">注销</asp:LinkButton></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div>
+            <section class="man-container">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+        </div>
+    </form>
+
+    <!-- 这里就是右边的内容啦啦啦 -->
+
+    <!--<footer class="footer"></footer>-->
+    <script src="../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../js/script.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $.manNav("#man-navigation");
+    </script>
+</body>
+</html>

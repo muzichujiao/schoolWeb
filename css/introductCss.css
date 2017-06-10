@@ -1,0 +1,161 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family:"Microsoft YaHei", Verdana, Arial, Helvetica, sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+*{
+	margin: 0;padding: 0;
+	border:0;
+}
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+.contentmain{
+	width: 100%;
+}
+
+#backg{
+	display: block;
+	width: 1190px;
+	height: auto;
+	margin: 0 auto;
+}
+/*=================main内容==============*/
+.introduct-main{
+    margin:100px auto;
+    width: 1190px;
+	border: 1px solid #000;
+}
+/*=================标题=================*/
+.introduct-title{
+	width: 100%;
+	margin-top: 40px;
+    height:120px;
+}
+.introduct-titleCont img{
+	float: left;
+	width: 50px;
+	margin-top: 30px;
+}
+.introduct-titleCont{
+	text-align: center;
+	width: 323px;
+	margin: 0 auto;
+	height: 70px;
+}
+.introduct-basicInfor{
+	float: left;
+	margin: 0 10px;
+}
+.introduct-basicInfor h1{
+    font-size: 30px;
+	font-weight: normal;
+	color: #000;
+}
+.introduct-basicInfor h2{
+    font-size: 24px;
+	font-weight: normal;
+	color: #000;
+}
+/*=================人员介绍=================*/
+.introduct-information{
+	width: 100%;
+	margin-top: 80px;
+    height:380px;
+}
+.introduct-inforDetail2{
+	margin-left: 90px;
+	float: left;
+}
+.introduct-inforDetail2 ul li{
+	height: 60px;
+}
+.introduct-inforDetail2 ul li span,.introduct-name h3{
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.introduct-inforDetail2 ul li:last-child span:first-child {
+        display:block;
+        float:left;
+    }
+
+.introduct-inforDetail2 ul li:last-child span:last-child {
+        display:block;
+       width:393px;
+        float:left;
+    }
+.introduct-name{
+	margin: 0 auto;
+	text-align: center;
+}
+.introduct-name h4{
+	font-size: 18px;
+	font-weight: normal;
+	color: #000;
+}
+.introduct-inforImage{
+	float: right;
+	margin-right: 77px;
+}
+.introduct-personImag{
+	margin-top: 30px;
+}
+.introduct-personImag img{
+	width: auto;
+	height: 234px;
+}
+#introduct-education,#introduct-education1,#introduct-education2,#introduct-education3,
+#introduct-education4,#introduct-education5,#introduct-education6{
+    padding-left:90px;
+     padding-right:90px;
+    margin-bottom:50px;
+    font-size:20px;
+     color:#000;
+    line-height:20px;
+}
+#introduct-education p{
+    font-size:20px;
+    color:#000;
+    line-height:32px;
+}
+
+.introduct-inforDetail2{
+    width:580px;
+}
+.introduct-inforDetail{
+	margin-left: 90px;
+}
+.introduct-inforDetail ul li span, .introduct-name h3{
+	font-size: 24px;
+	color: #000;
+}
+
+
+/*=================媒体查询===============*/
+@media only screen and (max-width: 1366px) {
+	.introduct-main{
+		width: 978px;
+	}
+	/*标题字体*/
+	.introduct-basicInfor h1{
+		font-size: 24px;
+	}
+    .introduct-inforDetail2{
+        width:460px;
+    }
+	.introduct-basicInfor h2{
+		font-size: 20px;
+	}
+	#backg{
+	    width: 980px;
+    }
+    .introduct-main{
+        margin:30px auto;
+    }
+}

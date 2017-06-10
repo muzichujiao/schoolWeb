@@ -1,0 +1,453 @@
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+*{
+	margin: 0;padding: 0;
+	border:0;
+}
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+a:hover{
+    text-decoration:underline !important;
+}
+
+/*===================教师介绍====================*/
+.introduct-main{
+	width: 1190px;
+	border: 1px solid #000;
+	margin: 30px auto;
+}
+/*=================标题=================*/
+.introduct-title{
+	width: 100%;
+	margin-top: 40px;
+    height:120px;
+}
+.introduct-titleCont img{
+	float: left;
+	width: 50px;
+	margin-top: 30px;
+}
+.introduct-titleCont{
+	text-align: center;
+	width: 345px;
+	margin: 0 auto;
+	height: 70px;
+}
+.introduct-basicInfor{
+	float: left;
+	margin: 0 10px;
+}
+.introduct-basicInfor h1{
+	font-size: 30px;
+	font-weight: normal;
+	color: #000;
+}
+.introduct-basicInfor h2{
+	font-size: 24px;
+	font-weight: normal;
+	color: #000;
+}
+/*=================人员介绍=================*/
+.introduct-information{
+	width: 100%;
+	margin-top: 80px;
+    height:380px;
+}
+.introduct-inforDetail2{
+	margin-left: 90px;
+	float: left;
+}
+.introduct-inforDetail2 ul li{
+	height: 60px;
+}
+.introduct-inforDetail2 ul li span,.introduct-name h3{
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.introduct-inforDetail2 ul li:last-child span:first-child {
+        display:block;
+        float:left;
+    }
+
+.introduct-inforDetail2 ul li:last-child span:last-child {
+        display:block;
+       width:393px;
+        float:left;
+    }
+.introduct-name{
+	margin: 0 auto;
+	text-align: center;
+}
+.introduct-name h4{
+	font-size: 18px;
+	font-weight: normal;
+	color: #000;
+}
+.introduct-inforImage{
+	float: right;
+	margin-right: 77px;
+}
+.introduct-personImag{
+	margin-top: 30px;
+}
+.introduct-personImag img{
+	width: auto;
+	height: 234px;
+}
+#introduct-education,#introduct-education1,#introduct-education2,#introduct-education3,
+#introduct-education4,#introduct-education5,#introduct-education6,#introduct-education7{
+    padding-left:90px;
+     padding-right:90px;
+    margin-bottom:50px;
+    font-size:20px;
+     color:#000;
+    line-height:20px;
+}
+#introduct-education p{
+    font-size:20px;
+    color:#000;
+    line-height:32px;
+}
+#introduct-education6 span,#introduct-education5 span,#introduct-education4 span,#introduct-education3 span,
+#introduct-education2 span,#introduct-education1 span,#introduct-education span,#introduct-education7 span{
+    line-height:32px;
+}
+
+.introduct-inforDetail2{
+    width:580px;
+}
+
+/*===================内容页=================*/
+.contentMain{
+	width: 100%;
+}
+.content-main{
+    width: 1190px;
+	margin: 0 auto;
+	border:1px solid #000;
+    margin-bottom:50px;
+}
+.content-tittle{
+	width: 1025px;
+	margin: 0 auto;
+	border-bottom:2px solid #000;
+
+}
+content-article p ol li{
+    font-size:18px;
+}
+.content-sign a{
+	text-decoration: underline;
+	color: #5eabec;
+	font-size: 18px;
+	display: inline-block;
+	margin-left: 5px;
+}
+#mainText_plAcademic{
+    text-align:center;
+    margin-bottom:10px;
+}
+#mainText_plAcademic span{
+    font-size: 18px;
+	color: rgb(102, 102, 102);
+}
+.content-tittle h1{
+	text-align: center;
+	width: 100%;
+	line-height: 58px;
+	font-weight: normal;
+	font-size: 28px;
+    margin-bottom:25px;
+	color: rgb(19, 40, 64);
+}
+.content-sign{
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 50px;
+}
+.content-sign span{
+	margin-bottom: 70px;
+	font-size: 16px;
+	color: rgb(102, 102, 102);
+}
+.content-contText{
+	width:100%;
+}
+.content-article{
+	margin-top: 75px;
+	width: 729px;
+	margin: 0 auto;
+    margin-bottom:25px;
+}
+.content-article p{
+	font-size: 18px;
+	color: rgb(19, 40, 64);
+	line-height: 32px;
+}
+
+.content-article p:last-child {
+    margin-bottom:20px;
+}
+
+.content-article img{
+	margin: 20px 0;
+}
+.content-note span{
+  font-size: 18px;
+  color: rgb(102, 102, 102);
+  line-height: 25px;
+}
+.content-note{
+	margin: 40px 0 20px 0;
+}
+/*=============================点击更多页===================*/
+/*=================s====主要内容=============*/
+
+.clickMore-main{
+    width: 1190px;
+	margin: 0 auto;
+}
+.clickMore-information{
+    margin-top:50px;
+}
+/*=====================标题==============*/
+.clickMore-tittle{
+	margin: 0 auto;
+	width: 100%;
+}
+.clickMore-mainTittle{
+	height: 70px;
+	width: 675px;
+	margin: 0 auto;
+}
+.clickMore-mainTittle img{
+	float: left;
+	display: block;
+	margin-top:33px;
+}
+.clickMore-news{
+	float: left;
+	text-align: center;
+	width: 150px;
+}
+.clickMore-news h1{
+	font-size: 28px;
+	font-weight: normal;
+    color:#000;
+}
+.clickMore-news h2{
+	font-size: 20px;
+	font-weight: normal;
+    color:#000;
+}
+/*====================副标题============================*/
+.clickMore-subtittle{
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	height: 60px;
+}
+.clickMore-subtittle img{
+	float: left;
+	margin-top: 20px;
+}
+.clickMore-college{
+	float: left;
+	width: 100px;
+}
+.clickMore-college h2{
+	font-size: 24px;
+	font-weight: normal;
+    color:#000;
+}
+.clickMore-college h3{
+    color:#000;
+	font-weight: 18px;
+	font-weight: normal;
+}
+/*====================详细列表===================*/
+.clickMore-inforLine{
+	width: 100%;
+	margin-bottom: 40px;
+}
+.clickMore-inforLine li{
+	height: 105px;
+	border-bottom: 1px solid #000;
+}
+.clickMore-inforLine ul li a:hover .clickMore-inforText h3{
+    color: #5eabec;
+}
+.clickMore-inforLine ul li a:hover #clickMore-data{
+     color: #5eabec;
+}
+.clickMore-inforLine ul li a:hover #clickMore-data span{
+     color: #5eabec;
+}
+.clickMore-inforLine ul li a:hover .clickMore-inforText p{
+    color: #5eabec;
+}
+.clickMore-inforText p{
+    
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+
+}
+
+#clickMore-data{
+	color: #132840;
+    width: 63px;
+    font-size: 24px;
+    margin: 26px 0 0 10px;
+    text-align:right;
+    float: left;
+}
+#clickMore-data span{
+    text-align:right;
+	font-size: 18px;
+    display: block;
+}
+.clickMore-inforText{
+	float: left;
+	margin-left: 20px;
+}
+.clickMore-inforText h3{
+	font-size: 24px;
+    line-height: 65px;
+    color: #132840;
+    font-weight: normal;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.clickMore-inforText p{
+	color: #a9a9a9;
+	font-size: 20px;
+    width:1034px;
+}
+/*====================跳页==================*/
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+
+.change-page ul li {
+	height: 56px;
+	font-size: 18px;
+}
+.change-page {
+	position: relative;
+	width: 600px;
+	margin: 0 auto;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+
+.change-page ul li {
+	width: 100px;
+	text-align: center;
+	height: 20px;
+	float: left;
+	font-size: 20px;
+	color: #485B71;
+	border: 0px;
+}
+
+.change-page ul li span {
+	padding: 0 10px;
+}
+
+.change-page ul li a {
+	color: #485B71;
+}
+
+.change-page ul li a:hover {
+	text-decoration: none;
+}
+
+.change-page input {
+	width: 26px;
+	position: absolute;
+	left: 342px;
+	font-size: 20px;
+	top: 0px;
+	height: 26px;
+}
+
+.introduct-inforDetail{
+    margin-left: 90px;
+}
+.introduct-inforDetail ul li span, .introduct-name h3{
+	font-size: 24px;
+	color: #000;
+}
+
+
+
+
+
+@media only screen and (max-width: 1366px) {
+    /*=================教师介绍================*/
+	.introduct-main{
+		width: 980px;
+	}
+	/*标题字体*/
+	.introduct-basicInfor h1{
+		font-size: 24px;
+	}
+    .introduct-inforDetail2{
+        width:460px;
+    }
+	.introduct-basicInfor h2{
+		font-size: 22px;
+	}
+
+/*=================内容页======================*/
+    .content-main{
+        width: 978px;
+	    margin: 0 auto;
+        margin-bottom:50px;
+	}
+
+	.content-tittle{
+		width: 729px;
+	}
+	/*/*.content-sign{
+		margin-bottom: 70px;
+	}*/*/
+	
+	.content-sign span,.content-sign a,#mainText_plAcademic span{
+		font-size: 16px;
+	}
+
+    /*================点击更多页==================*/
+    .clickMore-main{
+        width: 978px;
+	    margin: 0 auto;
+	}
+
+        .clickMore-mainTittle img{
+            margin-top: 25px;
+        }
+  .clickMore-inforText p{
+          width:875px;
+    }
+
+	.clickMore-inforText h3{
+		font-size: 22px;
+	}
+	.clickMore-inforText p{
+		font-size: 18px;
+	}
+	/*跳页*/
+	.change-page{
+		height: 40px;
+	}
+	.change-page ul li{
+		height: 20px;
+	}
+}
